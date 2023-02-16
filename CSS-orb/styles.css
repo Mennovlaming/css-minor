@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    
+    border-radius: 5em;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: white;
+}
+
+/* gebruik :checked om on click effecten toe te voegen.  */
+/* :indeterminate is unchecked styling. */
+/* met :target is een goede klikbare interactie */
+section:first-of-type  {
+  background-color: white;
+  height: 8em;
+  width: 8em;
+  border-radius: 10em;
+  transition: .5s;
+     /* offset-path: path("M20,20 C20,100 200,0 200,100"); 
+    animation: move 3000ms infinite alternate ease-in-out; */
+
+    
+    /* x-as y-as blur spread */
+    /* https://codersblock.com/blog/creating-glow-effects-with-css/ */
+   
+}
+
+section:first-of-type:hover {
+    
+
+    box-shadow: 
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+    
+    
+   
+}
+
+/* @keyframes move {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
+    }
+  } */
+
+  section:nth-of-type(2) {
+    display: block;
+    background-color: white;
+    width: 20em;
+    height: 2em;
+    align-self: flex-start;
+    justify-self: flex-start;
+  }

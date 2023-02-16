@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+}
+
+
+
+main form input {
+  display: none;
+} 
+
+main form label {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  transition: .5s;
+  height: 4em;
+  width: 10em;
+  border-radius: 0%;
+  background-color: red;
+}
+
+main form label:hover {
+  cursor: pointer;
+}
+
+#check:checked + label {
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  background-color: forestgreen;
+  bottom: 50%;
+  left: 2.5em;
+}
+@keyframes transform{
+  0% {
+
+  }
+  100% {
+
+  }
+}
+
+
+  
