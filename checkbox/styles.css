@@ -29,6 +29,10 @@ main form label:hover {
   cursor: pointer;
 }
 
+body :has(#check:checked) h1 {
+  color: red;
+}
+
 #check:checked + label {
   height: 5em;
   width: 5em;
