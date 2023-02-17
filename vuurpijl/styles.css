@@ -52,17 +52,13 @@ main section::after {
   }
   70% {
     transform: rotate(-60deg);
-    transform: scale(1);
   }
   90% {
     transform: rotate(-20deg);
-    transform: scale(3);
-    background-color: green;
 
   }
   100% {
     offset-distance: 100%;
-    transform: scale(5);
     background-color: red;
   }
 } 
