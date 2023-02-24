@@ -5,9 +5,11 @@
 
 main {
   position: relative;
-  height: 100vh;
+  background-color: blueviolet;
+  height: 50%;
+  width: 50%;
 }
-
+/* vuurwerk body */
 main section {
   position: absolute;
   
@@ -15,25 +17,33 @@ main section {
   height: 2em;
   background: green;
   left: 5em;
-     /* offset-path: path("M88.451 532.072C65.0874 508.708 48.8858 483.162 32.3822 455.045C16.0673 427.249 11.5809 397.089 6.587 366.015C1.70538 335.641 -0.0772858 301.098 6.22873 270.895C11.6646 244.861 21.2742 215.082 45.2798 201.213C64.5476 190.08 91.8231 189.868 113.53 190.285C132.447 190.649 141.274 205.76 149.715 219.663C158.99 234.94 156.163 257.119 156.163 274.12C156.163 287.119 140.448 303.497 127.95 306.274C113.778 309.424 93.8847 306.491 80.4795 303.139C65.584 299.416 52.2597 291.598 42.5032 279.673C34.571 269.978 29.5447 257.409 24.8586 245.906C19.3356 232.35 12.1738 220.13 12.7671 204.706C13.956 173.795 17.6353 145.782 26.4708 116.751C32.5183 96.8809 40.5013 77.9833 48.8625 58.9806C57.7422 38.7994 72.9056 20.1393 85.2266 1.65796");   */
-  offset-path: path("M135.924 694.089C135.924 675.565 137.177 657.724 128.758 640.887C121.676 626.721 115.4 611.842 108.158 597.357C98.2576 577.556 91.3888 555.007 84.8707 533.675C82.1553 524.788 80.4357 515.444 77.5263 506.716C75.5457 500.774 75.497 495.255 73.854 489.34C70.8577 478.553 73.0479 464.446 73.0479 453.155C73.0479 421.09 88.9827 387.326 111.741 365.2C129.428 348.005 148.432 339.405 172.915 339.405C189.148 339.405 207.369 352.573 215.28 366.813C222.401 379.631 228.364 401.469 224.237 416.433C220.302 430.694 214.963 446.763 202.83 456.2C187.24 468.326 161.791 466.769 142.731 466.769C122.843 466.769 103.019 459.215 86.0351 449.662C74.5591 443.207 63.9981 429.575 55.3137 419.926C41.2716 404.323 28.8547 385.467 21.4575 365.917C4.18155 320.259 2.11111 268.407 2.11111 220.102C2.11111 186.17 3.46972 154.414 12.5904 121.579C16.6084 107.114 19.8451 92.6137 25.0402 78.587C28.3084 69.7629 34.574 61.4342 37.2213 52.4336C42.3602 34.9613 49.0563 18.1945 56.9259 2.45535");  
- /* door de ease-out stijgt hij snel op, word ie dan wat slomer */
-  animation: move 3000ms infinite ease-out; 
+  margin-left: 10em;
+  /* offset-path: path("M88.451 532.072C65.0874 508.708 48.8858 483.162 32.3822 455.045C16.0673 427.249 11.5809 397.089 6.587 366.015C1.70538 335.641 -0.0772858 301.098 6.22873 270.895C11.6646 244.861 21.2742 215.082 45.2798 201.213C64.5476 190.08 91.8231 189.868 113.53 190.285C132.447 190.649 141.274 205.76 149.715 219.663C158.99 234.94 156.163 257.119 156.163 274.12C156.163 287.119 140.448 303.497 127.95 306.274C113.778 309.424 93.8847 306.491 80.4795 303.139C65.584 299.416 52.2597 291.598 42.5032 279.673C34.571 269.978 29.5447 257.409 24.8586 245.906C19.3356 232.35 12.1738 220.13 12.7671 204.706C13.956 173.795 17.6353 145.782 26.4708 116.751C32.5183 96.8809 40.5013 77.9833 48.8625 58.9806C57.7422 38.7994 72.9056 20.1393 85.2266 1.65796");   */
+  offset-path: path("M135.924 694.089C135.924 675.565 137.177 657.724 128.758 640.887C121.676 626.721 115.4 611.842 108.158 597.357C98.2576 577.556 91.3888 555.007 84.8707 533.675C82.1553 524.788 80.4357 515.444 77.5263 506.716C75.5457 500.774 75.497 495.255 73.854 489.34C70.8577 478.553 73.0479 464.446 73.0479 453.155C73.0479 421.09 88.9827 387.326 111.741 365.2C129.428 348.005 148.432 339.405 172.915 339.405C189.148 339.405 207.369 352.573 215.28 366.813C222.401 379.631 228.364 401.469 224.237 416.433C220.302 430.694 214.963 446.763 202.83 456.2C187.24 468.326 161.791 466.769 142.731 466.769C122.843 466.769 103.019 459.215 86.0351 449.662C74.5591 443.207 63.9981 429.575 55.3137 419.926C41.2716 404.323 28.8547 385.467 21.4575 365.917C4.18155 320.259 2.11111 268.407 2.11111 220.102C2.11111 186.17 3.46972 154.414 12.5904 121.579C16.6084 107.114 19.8451 92.6137 25.0402 78.587C28.3084 69.7629 34.574 61.4342 37.2213 52.4336C42.3602 34.9613 49.0563 18.1945 56.9259 12.45535");  
+  /* door de ease-out stijgt hij snel op, word ie dan wat slomer */
+  /* animation: move 3000ms infinite ease-out;  */
+  
 }
-
+/* vuurwerk punt */
 main section::before{
   position: absolute;
   content: "";
   
   transform: rotate(90deg);
   left: 4em;
-  bottom: -.3em;
-  width: 0;
-	height: 0;
-	border-left: 20px solid transparent;
+  
+  width: 4em;
+	height: 4em;
+  background-color: silver;
+	/* border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
-	border-bottom: 40px solid #555;
+	border-bottom: 40px solid #555; */
+  
+
+  /* animation: explode 3000ms infinite; */
+  
 }
+/* vuurwerk staart */
 main section::after {
   position: absolute;
   content: "";
@@ -42,26 +52,105 @@ main section::after {
   background-color: black;
   right: 4em;
   
+  /* animation: explode2 3000ms infinite; */
 }
+
  @keyframes move {
   0% {
     offset-distance: 0%;
   }
   50% {
-    transform: rotate(60deg);
+    transform: rotate(0deg);
   }
   70% {
-    transform: rotate(-60deg);
+    transform: rotate(0deg);
   }
-  90% {
-    transform: rotate(-20deg);
 
+  80% {
+    transform: rotate(0deg);
+    background-color: green;
+ 
+     width: 4em;
+     height: 2em;
+     border-radius: 0;
+  }
+  /* hier laten ontploffen */
+  90% {
+   
   }
   100% {
-    offset-distance: 100%;
-    background-color: red;
+  offset-distance: 85%;
+    
+  width: 20em;
+  height: 20em;
+  border-radius: 10em;
+  
+  background-color: rgb(255, 183, 0);
   }
 } 
 
+/* nog een keyframes animatie maken voor de :after en :before die hem weg laat vliegen */
+
+@keyframes explode {
+  0% {
+
+  }
+  80% {
+    width: 0;
+	  height: 0;
+    border-left: 20px solid transparent;
+	  border-right: 20px solid transparent;
+	  border-bottom: 40px solid #555;
+    background-color: transparent;
+    border-radius: 0%;
+    opacity: 1;
+    clip-path: none;
+  }
+ 
+  90% {
+   
+  }
+  100% {
+    width: 20em;
+    height: 20em;
+    background-color: red;
+    border-radius: 50%;
+
+    border-left: 0;
+	  border-right: 0;
+	  border-bottom: 0;
+    opacity: 70%;
+
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+}
+
+/* een delay geven van ongeveer 3s, zodat hij bij de 0% al ontploft, dan je hem bij de 50% nog een keer laten ontploffen. */
+@keyframes explode2 {
+  0% {
+
+  }
+  80% {
+    width: 2em;
+    height: .5em;
+    background-color: black;
+    border-radius: 0%;
+    clip-path: none;
+  }
+  99% {
+    
+  }
+  100% {
+    width: 25em;
+    height: 25em;
+    background-color: orange;
+    border-radius: 50%;
+    opacity: 70%;
+
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+}
+/* psuedo random css
+Als je priemgetallen gebruikt voor een ritme, is je ritme uniek */
 
   

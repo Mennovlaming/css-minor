@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+}
+section:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* staart */
+section:first-of-type ul li:nth-of-type(1) {
+  width: 2em;
+  height: 2em;
+  
+  background-image:
+		conic-gradient(
+			at center top,
+			transparent 153.5deg,
+			red 0deg 206.5deg,
+			transparent 0deg
+		);
+    animation: explode2 3000ms infinite;
+}
+/* body */
+section:first-of-type ul li:nth-of-type(2) {
+  width: 2em;
+  height: 4em;
+  background-color: green;
+  animation: explode 3000ms infinite;
+
+}
+/* punt */
+section:first-of-type ul li:nth-of-type(3) {
+  width: .5em;
+  height: 3em;
+  background-color: black;
+  animation: explode3 3000ms infinite;
+}
+
+section:first-of-type {
+  margin-right: 15em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+section:first-of-type ul {
+  offset-path: path("M135.924 694.089C135.924 675.565 137.177 657.724 128.758 640.887C121.676 626.721 115.4 611.842 108.158 597.357C98.2576 577.556 91.3888 555.007 84.8707 533.675C82.1553 524.788 80.4357 515.444 77.5263 506.716C75.5457 500.774 75.497 495.255 73.854 489.34C70.8577 478.553 73.0479 464.446 73.0479 453.155C73.0479 421.09 88.9827 387.326 111.741 365.2C129.428 348.005 148.432 339.405 172.915 339.405C189.148 339.405 207.369 352.573 215.28 366.813C222.401 379.631 228.364 401.469 224.237 416.433C220.302 430.694 214.963 446.763 202.83 456.2C187.24 468.326 161.791 466.769 142.731 466.769C122.843 466.769 103.019 459.215 86.0351 449.662C74.5591 443.207 63.9981 429.575 55.3137 419.926C41.2716 404.323 28.8547 385.467 21.4575 365.917C4.18155 320.259 2.11111 268.407 2.11111 220.102C2.11111 186.17 3.46972 154.414 12.5904 121.579C16.6084 107.114 19.8451 92.6137 25.0402 78.587C28.3084 69.7629 34.574 61.4342 37.2213 52.4336C42.3602 34.9613 49.0563 18.1945 56.9259 12.45535");
+  transform: rotate(90deg);
+  
+
+  animation: move 3000ms infinite ease-in-out;  
+  
+  
+}
+
+@keyframes move {
+  0% {
+    
+    offset-distance: 0%;
+  }
+
+  100% {
+  offset-distance: 80%;
+  
+  }
+} 
+
+@keyframes explode {
+  
+  90% {
+    width: 2em;
+    height: 4em;
+    background-color: green;
+   
+    border-radius: 0;
+    z-index: 1;
+    clip-path: none;
+  }
+  100% {
+    width: 20em;
+    height: 20em;
+    background-color: red;
+    
+    border-radius: 50%;
+    z-index: 97;
+    clip-path: polygon(30% 25%, 0% 20%, 24% 45%, 2% 81%, 41% 60%, 66% 80%, 58% 52%, 81% 46%, 66% 39%, 71% 15%, 53% 23%, 41% 5%);
+  } 
+}
+
+@keyframes explode2 {
+  40% {
+
+  }
+  50%{
+    
+  }
+  90% {
+    width: 2em;
+    height: 2em;
+    background-color: transparent;
+    background-image:
+		conic-gradient(
+			at center top,
+			transparent 153.5deg,
+			red 0deg 206.5deg,
+			transparent 0deg
+		);
+    
+   
+    border-radius: 0;
+    z-index: 1;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    clip-path: none;
+    margin-left: 0;
+  }
+  100% {
+    width: 20em;
+    height: 20em;
+    background-image: none;
+    background-color: yellow;
+    
+    border-radius: 50%;
+    z-index: 98;
+    position: absolute;
+    bottom: 5em;
+    left: 5em;
+    margin-left: 15em;
+    clip-path: polygon(30% 25%, 0% 20%, 24% 45%, 2% 81%, 41% 60%, 66% 80%, 58% 52%, 81% 46%, 66% 39%, 71% 15%, 53% 23%, 41% 5%);
+  } 
+}
+
+@keyframes explode3 {
+  
+  90% {
+    width: .5em;
+    height: 3em;
+    background-color: black;
+   
+    border-radius: 0;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    position: relative;
+    clip-path: none;
+  }
+  100% {
+    width: 20em;
+    height: 20em;
+    background-color: orange;
+    
+    border-radius: 50%;
+    z-index: 99;
+    top: 2em;
+    right: -15em;
+    position: absolute;
+    clip-path: polygon(30% 25%, 0% 20%, 24% 45%, 2% 81%, 41% 60%, 66% 80%, 58% 52%, 81% 46%, 66% 39%, 71% 15%, 53% 23%, 41% 5%);
+  } 
+}

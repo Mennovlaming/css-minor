@@ -1,0 +1,53 @@
+body {
+	min-height:100dvh;
+	margin:0;
+	
+	display:grid;
+	place-content:center;
+}
+
+section {
+	position:relative;
+	
+	width:20em;
+	aspect-ratio:1;
+	
+/* 	background-color:silver; */
+	display:grid;
+	place-content:center;
+	place-items:center;
+	
+	transform-style:preserve-3d;
+}
+
+div {
+	position:absolute;
+	width:4em;
+	aspect-ratio:1;
+}
+
+section > div {
+	transform:rotatex(45deg) rotateY(45deg);
+	transform-style:preserve-3d;
+}
+
+div div:nth-of-type(1) {
+	background-color:#f008;
+	
+	transform:rotatey(0deg);
+	transform-origin:right center;
+}
+
+div div:nth-of-type(2) {
+	background-color:#0f08;
+	
+	transform:rotatey(90deg);
+	transform-origin:right center;
+}
+
+div div:nth-of-type(3) {
+	background-color:#00f8;
+	
+	transform:rotatex(90deg);
+	transform-origin:top center;
+}

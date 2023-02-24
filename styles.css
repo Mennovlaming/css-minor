@@ -1,0 +1,43 @@
+body {
+	min-height:100dvh;
+	margin:0;
+	
+	display:grid;
+	place-content:center;
+}
+
+div {
+	width:2em;
+	aspect-ratio:1;
+	
+/* 	background-color:red; */
+	border-radius:50%;
+	
+	background-image:
+		radial-gradient(
+			closest-side,
+			transparent calc(100% - var(--size, 2em)),
+			var(--color, blue) 100%
+		);
+	
+	transition:.2s --size, .2s --color, .2s width;
+}
+
+div:hover {
+	--color:red;
+	--size:4em;
+	
+	width:20em;
+}
+
+@property --color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: blue;
+}
+
+@property --size {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 2em;
+}
