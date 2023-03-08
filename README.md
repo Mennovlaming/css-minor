@@ -3,7 +3,7 @@
 ## Inhoudsopgave
 - De opdracht
 - Omschrijving
-- Onderzoek/leermomenten
+- Onderzoek/Leermomenten
 - Eindresultaat
 
 ## De Opdracht
@@ -148,4 +148,70 @@ animation: move 3000ms infinite ease-in-out;
 } 
 ```
 
+### gradient effect
+![ezgif com-video-to-gif-5](https://user-images.githubusercontent.com/24406793/223718938-c73bd2eb-1a15-40ab-891c-fb16a44f54aa.gif)
+```CSS
+div {
+	width:2em;
+	aspect-ratio:1;
+	
+/* 	background-color:red; */
+	border-radius:50%;
+	
+	background-image:
+		radial-gradient(
+			closest-side,
+			transparent calc(100% - var(--size, 2em)),
+			var(--color, blue) 100%
+		);
+	
+	transition:.2s --size, .2s --color, .2s width;
+}
+
+div:hover {
+	--color:red;
+	--size:4em;
+	
+	width:20em;
+}
+
+@property --color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: blue;
+}
+```
+
+
+Dit zijn de hoofdonderdelen die ik onderzocht heb in de afgelopen 3.5 week. Natuurlijk heb ik nog veel meer geleerd maar dit zijn de hoofdpunten, nu is het een kwestie van alles samenvoegen en combineren, en kijken wat hier uit kan komen.
+
+##Eindresultaat
+
+![ezgif com-video-to-gif-6](https://user-images.githubusercontent.com/24406793/223719958-e9402f33-dc45-4bc9-8484-fc6083c27230.gif)
+
+Het eindresultaat is een combinatie van mijn onderzochte doelen, ik heb de raket die opstijgt gradients gegeven, laten ontploffen in cirkels met gradients en shadows, bewegende wolken toegevoegd en met de has selector de animaties van de raket aangezet.
+
+```CSS
+
+body:has(.checkbox:checked) section:first-of-type ul li:nth-of-type(2) {
+  animation: mainshadow 5000ms infinite; 
+}
+body:has(.checkbox:checked) section:first-of-type ul {
+  animation: move 5000ms infinite ease-in-out;
+}
+body:has(.checkbox:checked) section:first-of-type ul li:nth-of-type(2)::after {
+  animation: aftershadow 5000ms infinite; 
+}
+
+body:has(.checkbox:checked) section:first-of-type ul li:nth-of-type(2)::before {
+  animation: beforeshadow 5000ms infinite; 
+}
+
+body:has(.checkbox:checked) section:first-of-type ul li:nth-of-type(3) {
+  animation: explode1 5000ms infinite;
+}
+body:has(.checkbox:checked) section:first-of-type ul li:nth-of-type(4) {
+  animation: explode2 5000ms infinite;
+}
+```
 
