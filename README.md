@@ -5,6 +5,7 @@
 - Omschrijving
 - Onderzoek/Leermomenten
 - Eindresultaat
+- Conclusie
 
 ## De Opdracht
 De opracht die ik heb gekozen is het maken van een vuurwerkshow met CSS. Hierbij is het de bedoeling om een 'show' met effecten en interactie te maken waarme je onderzoek doet naar de functies van tegenwoordig CSS.
@@ -214,4 +215,7 @@ body:has(.checkbox:checked) section:first-of-type ul li:nth-of-type(4) {
   animation: explode2 5000ms infinite;
 }
 ```
+
+##Conclusie
+CSS kan een heel stuk meer dan dat ik voor dit project dacht, ik zou voor minimaal de helft van alle effecten Javascript gebruiken, terwijl dit nergens voor nodig is. Ik ben redelijk tevreden met het eindresultaat, en tevreden met het onderzoek. Ik heb erg veel geleerd over CSS en ik zal nu ook in de toekomst in de gaten houden wat voor nieuwe dingen er komen. 
 
