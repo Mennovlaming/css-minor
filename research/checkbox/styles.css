@@ -10,6 +10,7 @@ main {
 
 
 
+
 main form input {
   display: none;
 } 
@@ -41,6 +42,9 @@ body :has(#check:checked) h1 {
   bottom: 50%;
   left: 2.5em;
 }
+
+
+
 @keyframes transform{
   0% {
 

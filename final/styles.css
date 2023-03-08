@@ -39,10 +39,6 @@ label:before {
   transition: .5s;
 }
 
-section:nth-of-type(3) {
-  position: absolute;
-  bottom: 12%;
-}
 /* eerst de normale styling van de checkbox uitzetten */
 input[type=checkbox]{
 	height: 0;
@@ -52,12 +48,17 @@ input[type=checkbox]{
 
 label:has(input:checked)::before {
   transform: translateX(100px);
-  
 }
 label:has(input:checked) {
   background-color: rgb(93, 158, 92);
 }
 
+
+
+section:nth-of-type(3) {
+  position: absolute;
+  bottom: 12%;
+}
 
 body:has(.checkbox:checked) section:first-of-type ul li:nth-of-type(2) {
   animation: mainshadow 5000ms infinite; 
